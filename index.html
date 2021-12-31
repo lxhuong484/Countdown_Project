@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Countdown to new year</title>
+</head>
+
+<body>
+    <div class="app">
+        <p class="app__heading">Countdown to new year</p>
+        <h4 class="app__year" id="year">0000</h4>
+        <div class="timer">
+            <div class="timer__box">
+                <div class="timer__box-number">
+                    <span id="days">0</span>
+                </div>
+                <div class="timer__box-title">Days</div>
+            </div>
+            <div class="timer__box">
+                <div class="timer__box-number">
+                    <span id="hours">0</span>
+                </div>
+                <div class="timer__box-title">Hours</div>
+            </div>
+            <div class="timer__box">
+                <div class="timer__box-number">
+                    <span id="minutes">0</span>
+                </div>
+                <div class="timer__box-title">Minutes</div>
+            </div>
+            <div class="timer__box">
+                <div class="timer__box-number">
+                    <span id="seconds">0</span>
+                </div>
+                <div class="timer__box-title">Seconds</div>
+            </div>
+        </div>
+    </div>
+    <div class="music-background">
+        <audio id="music-background-file">
+            <source src="./assets/music/happy new year.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="fireworks-container" style="background-image: url('./assets/img/sai_gon_by_night.jpg');"></div>
+    <script src="./assets/js/fireworks.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
