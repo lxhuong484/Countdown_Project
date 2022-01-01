@@ -9,11 +9,10 @@ const minutesElement = $('#minutes')
 const secondsElement = $('#seconds')
 const backgroundMusic = $('#music-background-file')
 
-
 const now = new Date()
 const countDownDate = new Date(now.getFullYear() + 1, 0, 1).getTime()
 
-yearsElement.innerHTML = now.getFullYear() + 1
+yearsElement.innerHTML = now.getFullYear() + 1;
 
 const updateTime = () => {
     const now = new Date().getTime()
@@ -30,12 +29,14 @@ const updateTime = () => {
     secondsElement.innerHTML = seconds
 
     if (distance < 0) {
-        clearInterval(countDownInterval)
         backgroundMusic.play()
+        daysElement.innerHTML = "0"
+        hoursElement.innerHTML = "0"
+        minutesElement.innerHTML = "0"
+        secondsElement.innerHTML = "0"
+        clearInterval(countDownInterval)
     }
 }
-
-updateTime()
 
 const countDownInterval = setInterval(updateTime, 1000)
 
